@@ -3,11 +3,7 @@
 
 	Purpose: helper functions which are useful when
 	implementing a 2-dimensional histogram filter.
-
-	This file is incomplete! Your job is to make the
-	normalize and blur functions work. Feel free to 
-	look at helper.py for working implementations 
-	which are written in python.
+ 
 */
 
 #include <vector>
@@ -16,7 +12,6 @@
 #include <string>
 #include <fstream>
 #include "helpers.h"
-// #include "debugging_helpers.cpp"
 
 using namespace std;
 
@@ -194,15 +189,6 @@ float_matrix blur(vector < vector < float> > grid, float blurring) {
 	return normalize(newGrid);
 }
 
-/** -----------------------------------------------
-#
-#
-#	You do not need to modify any code below here.
-#
-#
-# ------------------------------------------------- */
-
-
 /**
     Determines when two grids of floating point numbers 
     are "close enough" that they should be considered 
@@ -326,13 +312,3 @@ vector < vector <float> > zeros(int height, int width) {
 	}
 	return newGrid;
 }
-
-/*int main() {
-    vector < vector <float> > grid = {{0,0,0},{0,1,0},{0,0,0}};
-    blur(grid, 0.12);
-    
-    
-// 	vector < vector < char > > map = read_map("maps/m1.txt");
-// 	show_grid(map);
-    return 0;
-}*/
