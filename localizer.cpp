@@ -6,9 +6,6 @@
 	correctly implementing the "initialize_beliefs", 
 	"sense", and "move" functions.
 
-	This file is incomplete! Your job is to make these
-	functions work. Feel free to look at localizer.py 
-	for working implementations which are written in python.
 */
 
 #include "localizer.h"
