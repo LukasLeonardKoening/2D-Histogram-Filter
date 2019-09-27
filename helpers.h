@@ -5,7 +5,7 @@
 #include <string>
 
 // Normalizes a grid of numbers. 
-std::vector< std::vector<float> > normalize(std::vector< std::vector <float> > grid);
+std::vector< std::vector<float> > normalize(std::vector< std::vector <float> > &grid);
 
 /** 
 	Blurs (and normalizes) a grid of probabilities by spreading 
@@ -13,7 +13,7 @@ std::vector< std::vector<float> > normalize(std::vector< std::vector <float> > g
 	function assumes a cyclic world where probability "spills 
 	over" from the right edge to the left and bottom to top.
 */
-std::vector < std::vector <float> > blur(std::vector < std::vector < float> > grid, float blurring);
+std::vector < std::vector <float> > blur(std::vector < std::vector < float> > &grid, float blurring);
 
 /**
     Determines when two grids of floating point numbers 
