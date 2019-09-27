@@ -28,7 +28,7 @@ typedef vector< vector <char> > char_matrix;
     @return - a new normalized two dimensional grid where the sum of 
     	   all probabilities is equal to one.
 */
-float_matrix normalize(float_matrix grid) {
+float_matrix normalize(float_matrix &grid) {
 	float_matrix newGrid = zeros(grid.size(), grid[0].size());
     
     // Calculate normalizer
@@ -79,7 +79,7 @@ float_matrix normalize(float_matrix grid) {
     @return - a new normalized two dimensional grid where probability 
     	   has been blurred.
 */
-float_matrix blur(vector < vector < float> > grid, float blurring) {
+float_matrix blur(vector < vector < float> > &grid, float blurring) {
     int rows = grid.size();
     int cols = grid[0].size();
 
