@@ -20,9 +20,6 @@ std::vector < std::vector <float> > blur(std::vector < std::vector < float> > &g
     are "close enough" that they should be considered 
     equal. Useful for battling "floating point errors".
 */
-bool close_enough(std::vector < std::vector <float> > g1, std::vector < std::vector <float> > g2);
-
-bool close_enough(float v1, float v2);
 
 // Helper function for reading in map data
 std::vector <char> read_line(std::string s);
