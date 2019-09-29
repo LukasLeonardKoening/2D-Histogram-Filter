@@ -11,7 +11,7 @@ Following functions should be implemented:
 
   1. Download the files;
   2. Run terminal command: `g++ -std=c++11 simulate.cpp` in the folder
-  3. Run terminal command: `./a.out
+  3. Run terminal command: ./a.out
   4. See the results of sensing, moving 1 down and sensing again! Feel free to change the simulation.
   
 ## How to change the simulation?
