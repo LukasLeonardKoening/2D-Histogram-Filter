@@ -15,12 +15,6 @@ std::vector< std::vector<float> > normalize(std::vector< std::vector <float> > &
 */
 std::vector < std::vector <float> > blur(std::vector < std::vector < float> > &grid, float blurring);
 
-/**
-    Determines when two grids of floating point numbers 
-    are "close enough" that they should be considered 
-    equal. Useful for battling "floating point errors".
-*/
-
 // Helper function for reading in map data
 std::vector <char> read_line(std::string s);
 
