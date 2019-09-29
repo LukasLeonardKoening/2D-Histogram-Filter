@@ -190,47 +190,6 @@ float_matrix blur(vector < vector < float> > &grid, float blurring) {
 }
 
 /**
-    Determines when two grids of floating point numbers 
-    are "close enough" that they should be considered 
-    equal. Useful for battling "floating point errors".
-
-    @param g1 - a grid of floats
-    
-    @param g2 - a grid of floats
-
-    @return - A boolean (True or False) indicating whether
-    these grids are (True) or are not (False) equal.
-*/
-bool close_enough(vector < vector <float> > g1, vector < vector <float> > g2) {
-	int i, j;
-	float v1, v2;
-	if (g1.size() != g2.size()) {
-		return false;
-	}
-
-	if (g1[0].size() != g2[0].size()) {
-		return false;
-	}
-	for (i=0; i<g1.size(); i++) {
-		for (j=0; j<g1[0].size(); j++) {
-			v1 = g1[i][j];
-			v2 = g2[i][j];
-			if (abs(v2-v1) > 0.0001 ) {
-				return false;
-			}
-		}
-	}
-	return true;
-}
-
-bool close_enough(float v1, float v2) { 
-	if (abs(v2-v1) > 0.0001 ) {
-		return false;
-	} 
-	return true;
-}
-
-/**
     Helper function for reading in map data
 
     @param s - a string representing one line of map data.
